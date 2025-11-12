@@ -4,8 +4,8 @@
   font-family: "Poppins", sans-serif;
   color: #222;
   background-color: #f9f9ff;
-  overflow-x: hidden;
-   min-width: 405px;
+  overflow: hidden;
+   min-width: 407px;
     box-sizing: border-box;
 
 }
