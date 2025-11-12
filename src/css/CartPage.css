@@ -1,6 +1,7 @@
 .cart-container {
   padding: 40px 10%;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
+  min-width: 337px;
 }
 
 .cart-container h2 {

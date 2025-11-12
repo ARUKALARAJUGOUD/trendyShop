@@ -4,8 +4,9 @@
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(135deg, #f7f9fc, #eef1f6);
+  /* background: #007bff; */
   padding: 20px;
-   min-width: 350px;
+   min-width: 369px;
 }
 
 .auth-card {
