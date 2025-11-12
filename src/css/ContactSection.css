@@ -1,8 +1,7 @@
 .contact-section {
   background: #f4f6f8;
-  padding: 80px 50px;
-  /* border: 2px solid red; */
-  /* overflow: hidden; */
+  padding: 80px 70px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +11,7 @@
 .contact-container {
   display: flex;
   max-width: 1200px;
-  min-width: 400px;
+  min-width: 370px;
  
   margin: auto;
   gap: 60px;
@@ -117,6 +116,7 @@
 @media (max-width: 900px) {
   .contact-container {
     flex-direction: column;
+    
     gap: 30px;
   }
 
@@ -129,7 +129,9 @@
 @media (max-width: 900px) {
   .contact-container {
     flex-direction: column;
-   
     gap: 30px;
+  }
+  .contact-section {
+    min-width: 267px;
   }
 }
