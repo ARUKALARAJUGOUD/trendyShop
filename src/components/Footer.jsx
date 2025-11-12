@@ -8,6 +8,7 @@ import {
   FaYoutube,
   FaPaperPlane,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -34,44 +35,44 @@ const Footer = () => {
           <div className="footer-column">
             <h4>Categories</h4>
             <ul>
-              <li><a href="#">Men’s Fashion</a></li>
-              <li><a href="#">Women’s Fashion</a></li>
-              <li><a href="#">Electronics</a></li>
-              <li><a href="#">Home & Living</a></li>
-              <li><a href="#">Beauty & Health</a></li>
+              <li><Link>Men’s Fashion</Link></li>
+              <li><Link>Women’s Fashion</Link></li>
+              <li><Link >Electronics</Link></li>
+              <li><Link>Home & Living</Link></li>
+              <li><Link to = "">Beauty & Health</Link></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h4>Support</h4>
             <ul>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Track Order</a></li>
-              <li><a href="#">Returns</a></li>
-              <li><a href="#">Shipping Info</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><Link>Help Center</Link></li>
+              <li><Link>Track Order</Link></li>
+              <li><Link>Returns</Link></li>
+              <li><Link>Shipping Info</Link></li>
+              <li><Link>Contact Us</Link></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h4>Account</h4>
             <ul>
-              <li><a href="#">My Account</a></li>
-              <li><a href="#">Wishlist</a></li>
-              <li><a href="#">Orders</a></li>
-              <li><a href="#">Rewards</a></li>
-              <li><a href="#">Gift Cards</a></li>
+              <li><Link>My Account</Link></li>
+              <li><Link>Wishlist</Link></li>
+              <li><Link>Orders</Link></li>
+              <li><Link>Rewards</Link></li>
+              <li><Link>Gift Cards</Link></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h4>Policies</h4>
             <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Refund Policy</a></li>
-              <li><a href="#">Cookies Policy</a></li>
-              <li><a href="#">Disclaimer</a></li>
+              <li><Link>Privacy Policy</Link></li>
+              <li><Link>Terms of Use</Link></li>
+              <li><Link>Refund Policy</Link></li>
+              <li><Link>Cookies Policy</Link></li>
+              <li><Link>Disclaimer</Link></li>
             </ul>
           </div>
         </div>
@@ -80,11 +81,11 @@ const Footer = () => {
         <div className="footer-social">
           <h4>Follow Us</h4>
           <div className="social-icons">
-            <a href="#" className="social-link"><FaFacebookF /></a>
-            <a href="#" className="social-link"><FaTwitter /></a>
-            <a href="#" className="social-link"><FaInstagram /></a>
-            <a href="#" className="social-link"><FaLinkedinIn /></a>
-            <a href="#" className="social-link"><FaYoutube /></a>
+            <Link className="social-link"><FaFacebookF /></Link>
+            <Link className="social-link"><FaTwitter /></Link>
+            <Link className="social-link"><FaInstagram /></Link>
+            <Link className="social-link"><FaLinkedinIn /></Link>
+            <Link className="social-link"><FaYoutube /></Link>
           </div>
         </div>
       </div>
