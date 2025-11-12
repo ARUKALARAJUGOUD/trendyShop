@@ -1,0 +1,77 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #38a169, #68d391); /* modern green gradient */
+  color: #ffffff;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+/* Button */
+section button {
+  background-color: #ffffff;
+  color: #38a169;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+section button:hover {
+  background-color: #c6f6d5;
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  section h1 {
+    font-size: 2.5rem;
+  }
+  section p {
+    font-size: 1.1rem;
+  }
+  section button {
+    padding: 0.7rem 1.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section h1 {
+    font-size: 2rem;
+  }
+  section p {
+    font-size: 1rem;
+  }
+  section {
+    padding: 3rem 1rem;
+  }
+}

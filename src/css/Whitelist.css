@@ -1,0 +1,38 @@
+.wishlist-page {
+  padding: 30px 8%;
+  background: #fafafa;
+  min-height: 100vh;
+  min-width: 350px;
+}
+
+.empty-wishlist {
+  text-align: center;
+  padding: 50px 0;
+  
+}
+
+.empty-wishlist p {
+  font-size: 1.2rem;
+  margin: 2rem 0rem;
+  color: #555;
+}
+
+.btn-remove {
+  background: white;
+  border: 1px solid #ff4c3b;
+  color: #ff4c3b;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-remove:hover {
+  background: #ff4c3b;
+  color: white;
+}
+
+.btn-fav.active {
+  background: #ff4c3b;
+  color: white;
+}

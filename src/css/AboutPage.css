@@ -1,0 +1,199 @@
+/* ------------------- ABOUT PAGE ------------------- */
+.about-container {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  overflow: hidden;
+   min-width: 400px;
+ 
+}
+
+/* ================= ABOUT SECTION ================= */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+  padding: 80px 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-text p {
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+}
+
+/* ================= OUR STORY ================= */
+.our-story {
+  max-width: 900px;
+  /* border: 2px solid red; */
+  margin: 80px auto;
+  margin-top: 80px;
+  /* margin-bottom: -20px; */
+  /* margin-top: 80px; */
+  text-align: center;
+  padding: 0 20px;
+}
+
+.our-story h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.our-story p {
+  font-size: 1.05rem;
+  color: #555;
+}
+
+/* ================= TEAM SECTION ================= */
+.team-section {
+  /* padding: 20px 20px; */
+  /* border: 2px solid red; */
+  background: #f7f8fa;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.team-card img:hover {
+  transform: scale(1.05);
+}
+
+.team-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.team-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column-reverse;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .about-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .about-image img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text h1 {
+    font-size: 2rem;
+  }
+
+  .team-grid {
+    gap: 20px;
+  }
+
+  .team-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .team-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .our-story h2 {
+    font-size: 2rem;
+  }
+
+  .team-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-image img {
+    max-width: 300px;
+  }
+}

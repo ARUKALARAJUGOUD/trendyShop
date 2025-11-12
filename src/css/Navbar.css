@@ -1,0 +1,324 @@
+/* ===== Navbar Styling ===== */
+.navbar {
+
+  min-width: 335px;
+  background: linear-gradient(90deg, #2a2a72, #009ffd);
+  color: #fff;
+  padding: 0.7rem 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===== Logo ===== */
+.navbar-logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: transform 0.2s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Search Box ===== */
+.search-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+.search-box input {
+  width: 70%;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-box input:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* ===== Navigation Links ===== */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #ffe600;
+}
+
+/* ===== Cart Icon ===== */
+.cart-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-count {
+  background-color: #ffe600;
+  color: #000;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Mobile Menu Button ===== */
+.mobile-menu-btn {
+  display: none;
+ 
+}
+
+.mobile-menu-btn button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===== Mobile Menu ===== */
+.mobile-menu {
+  display: none;
+  
+  margin-top: 2rem;
+  
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 1rem 0;
+  animation: slideDown 0.3s ease forwards;
+}
+
+.mobile-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 0;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(244, 240, 240, 0.1);
+}
+
+.mobile-menu a:hover {
+  /* background: #2a2a72; */
+}
+
+.mobile-menu input {
+  width: 80%;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+/* ===== Animations ===== */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+  .search-box {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+
+
+
+
+  /* ===== Cart Icon ===== */
+.cart-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* border: 2px solid red; */
+  text-align: center;
+  left: 45%;
+  /* color: red; */
+}
+
+.cart-count {
+  background-color: #ffe600;
+  color: #000;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  position: relative;
+  
+  top: -10px;
+  /* left: 0px; */
+  /* top: -8px;
+  left: 10px; */
+}
+
+
+
+
+}
+/* 
+@media (max-width: 400px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.3rem;
+  }
+
+  .mobile-menu input {
+    width: 90%;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

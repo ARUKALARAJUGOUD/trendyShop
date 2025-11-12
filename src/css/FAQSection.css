@@ -1,0 +1,131 @@
+.faq-section {
+  padding: 80px 20px;
+  background: #fafafa;
+  text-align: center;
+   box-sizing: border-box;
+   min-width: 400px;
+}
+
+.faq-section h2 {
+  font-size: 2.4rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.faq-subtitle {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.faq-container {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background: #fff;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-left: 5px solid transparent;
+}
+
+.faq-item.open {
+  border-left: 5px solid #007bff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  padding: 18px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #f7f7f7;
+}
+
+.faq-icon {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  min-width: 35px;
+}
+
+.faq-text {
+  flex: 1;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.faq-toggle {
+  font-size: 1.8rem;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.3s ease;
+  padding: 0 20px;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 250px;
+  padding: 15px 20px;
+}
+
+.faq-answer p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-section h2 {
+    font-size: 2rem;
+  }
+
+  .faq-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .faq-icon {
+    font-size: 1.3rem;
+  }
+
+  .faq-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-question {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .faq-icon {
+    font-size: 1.2rem;
+  }
+
+  .faq-text {
+    font-size: 0.95rem;
+  }
+
+  .faq-toggle {
+    font-size: 1.5rem;
+  }
+}
